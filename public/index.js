@@ -30,6 +30,7 @@ let DIS = result.DIS
 let BNTX = result.BNTX
 
 const stocks = [GME, MSFT, DIS, BNTX];
+stocks.forEach( stock => stock.values.reverse())
     // Time Chart
     new Chart(timeChartCanvas.getContext('2d'), {
         type: 'line',
